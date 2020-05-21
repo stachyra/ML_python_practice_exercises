@@ -32,6 +32,6 @@ Top: bias variance tradeoff vs. increasing number of features included in OLS re
 
 .. image:: figures/prediction_mean_squared_error.png
 
-House price prediction vs. observation of test data set for four regression models.
+House price prediction vs. observation of test split based on fit of training data to four regression models.
 
 .. image:: figures/tgt_pred_vs_obs.png

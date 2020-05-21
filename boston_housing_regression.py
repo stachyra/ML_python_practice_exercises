@@ -10,6 +10,39 @@ from sklearn.metrics import mean_squared_error, make_scorer
 import matplotlib.pyplot as plt
 import numpy as np
 
+"""
+Synopsis:
+
+    1.) Load Boston house price data and rescale to approximately similar
+        data ranges using yeo-johnson transform (semi-arbitrarily selected;
+        there were other options but I didn't test them).
+
+    2.) Test drive univariate feature ranking algorithms.  These attempt to
+        rank features based on how well each one by itself is capable of
+        potentially predicting the target variable.
+
+    3.) For benefit of OLS algorithm (which can easily overfit) attempt to
+        pick optimal combination of features at each level of model
+        complexity, ranging from 1 feature up to all 13.
+
+    4.) Attempt to observe bias-variance tradeoff in OLS model, as number
+        of features (and model complexity) increases.  Unfortunately I
+        didn't observe this (mean squared error scoring only improves with
+        increasing features; does not appear to inflect and begin rising
+        again), however I don't think I made a mistake, because intrinsicly
+        regularizing models such as ridge or random forest also seem to
+        get roughly comparable fit results.
+
+    5.) Show cross-validation based mean squared prediction error for four
+        regression models.  Accept all model hyperparameter defaults, don't
+        attempt to explore potential hyperparameter optimizations.
+
+    6.) Show scatter between observation and prediction of each data point
+        in the test set, using model fit results from training data set.
+        (This is essentially a more granular visualization of the same model
+        performance data measured in part 5.)
+"""
+
 # -------------------------------
 # Part 1: Load and Condition Data
 # -------------------------------

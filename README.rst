@@ -28,7 +28,7 @@ Left side: raw predictor variable distributions; right side: distributions after
 
 .. image:: figures/feat_dist_raw_vs_transformed.png
 
-Top: bias variance tradeoff vs. increasing number of features included in regression model; bottom: prediction vs. observation mean squared error for four regression models, using default hyperparameters.
+Top: bias variance tradeoff vs. increasing number of features included in OLS regression model; bottom: prediction vs. observation mean squared error for four regression models, using default hyperparameters.
 
 .. image:: figures/prediction_mean_squared_error.png
 
